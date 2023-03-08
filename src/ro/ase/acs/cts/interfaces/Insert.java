@@ -1,5 +1,8 @@
 package ro.ase.acs.cts.interfaces;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 public interface Insert {
-    public void insertDB();
+     void insertDB(Connection connection) throws SQLException;
 }
