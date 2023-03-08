@@ -1,5 +1,9 @@
 package ro.ase.acs.cts.classes;
 
+import ro.ase.acs.cts.interfaces.CreateTb;
+import ro.ase.acs.cts.interfaces.Insert;
+import ro.ase.acs.cts.interfaces.Read;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,7 +17,7 @@ public class DatabaseConnection {
             connection.setAutoCommit(false);
 
 //            createTable(connection);
-//            insertData(connection);
+//            insertDB(connection);
 //            readData(connection);
 
             connection.close();
